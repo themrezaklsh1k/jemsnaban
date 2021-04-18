@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Technopartner Indonesia</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_reset">RESET</string>
+
+    <string name="drawer_item_home">Dashboard</string>
+    <string name="drawer_item_send">Performance</string>
+    <string name="drawer_item_sent">Personal Info</string>
+    <string name="drawer_item_phonebook">Time Management</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="title_activity_front_page">FrontPageActivity</string>
+
+    <color name="alphabet_text_color">#747576</color>
+    <color name="alphabet_text_selected_color">#3F51B5</color>
+    <color name="alphabet_background_color">@android:color/white</color>
+    <color name="alphabet_background_border_color">@android:color/transparent</color>
+    <string name="title_activity_employee_detail">EmployeeDetailActivity</string>
+    <string name="title_activity_employee_filter">Filter</string>
+    <string name="title_activity_filter_name">Search</string>
+    <string name="title_activity_filter_organization">Filter by organization</string>
+    <string name="title_activity_filter_job">Filter by job</string>
+    <string name="title_activity_filter_category_emp">Filter by employment category</string>
+    <string name="title_activity_filter_type">Filter by people type</string>
+    <string name="title_activity_assignment_detail">Assignment Detail</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_employee_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobile.hcms.EmployeeFilterActivity"
+    tools:showIn="@layout/activity_employee_filter">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/filter_bottom_height">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="QUICK FILTERS"
+                android:textSize="15sp"
+                android:textColor="@color/md_teal_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="EFFECTIVE ON DATE : TODAY"
+                    android:textSize="13sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CustomCheckBox"
+                        android:id="@+id/checkBox"
+                        android:gravity="top|start"
+                        android:layout_gravity="top" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="SORT BY"
+                android:textSize="15sp"
+                android:textColor="@color/md_teal_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/organization">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="ORGANIZATION"
+                    android:textSize="13sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:text="Solock Recovery"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/job">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="JOB"
+                    android:textSize="13sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:text="Solock Recovery"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/category">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="EMPLOYMENT CATEGORY"
+                    android:textSize="13sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:text="whatever"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="PEOPLE TYPE"
+                    android:textSize="13sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:text="Employee"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/effectivedate">
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="EFFECTIVE ON DATE"
+                    android:textSize="13sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                    android:textColor="@color/divider"
+                    android:gravity="right"
+                    android:text="04 Dec 2017"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateofbirth" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/filter_bottom_height"
+        android:id="@+id/applyfilter">
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/md_white_1000"
+            android:textSize="18dp"
+            android:text="Apply Filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

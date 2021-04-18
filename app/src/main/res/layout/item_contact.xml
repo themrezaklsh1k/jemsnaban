@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:padding="13dp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagedrawable"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                android:layout_weight="0.4"
+                android:textSize="15sp"
+                android:text="Jemsnaban"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nohp"
+                android:textColor="@color/primary_text" />
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+                android:layout_marginTop="5dp"
+                android:text="090805483053"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:id="@+id/pesan"
+                android:textColor="@color/secondary_text"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

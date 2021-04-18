@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:paddingTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="SEARCH"
+                android:textSize="13sp"
+                android:textColor="@color/md_teal_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/filtername"
+                android:background="@color/md_white_1000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_search"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp" />
+
+                <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                    android:textColor="@color/secondary_text"
+                    android:text="Search by name or number"
+                    android:textSize="14sp"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <com.mobile.hcms.widgets.textview.TextViewLatoBold
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="PERSONAL INFORMATION"
+                android:textSize="13sp"
+                android:textColor="@color/md_teal_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:background="@color/md_white_1000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <!--com.viethoa.RecyclerViewFastScroller
+                            android:id="@+id/fast_scroller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"/-->
+
+                    </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar" />
+
+    <!--android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/right_margin_fab"
+        android:src="@drawable/adduser" /-->
+
+</android.support.design.widget.CoordinatorLayout>

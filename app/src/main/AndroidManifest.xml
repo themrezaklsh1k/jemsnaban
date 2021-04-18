@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobile.hcms">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FrontPageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EmployeeDetailActivity"
+            android:label="@string/title_activity_employee_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmployeeFilterActivity"
+            android:label="@string/title_activity_employee_filter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".filter.FilterNameActivity"
+            android:label="@string/title_activity_filter_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".filter.FilterOrganizationActivity"
+            android:label="@string/title_activity_filter_organization"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".filter.FilterJobActivity"
+            android:label="@string/title_activity_filter_job"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".filter.FilterCategoryEmpActivity"
+            android:label="@string/title_activity_filter_category_emp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".filter.FilterTypeActivity"
+            android:label="@string/title_activity_filter_type"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssignmentDetailActivity"
+            android:label="@string/title_activity_assignment_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

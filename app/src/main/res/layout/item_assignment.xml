@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/layout">
+
+    <com.mobile.hcms.widgets.textview.TextViewLatoBold
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:text="Assignment 1 - PRIMARY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="Start Date"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="19 Feb, 2017"
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startdate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="End Date"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="20 Feb, 2017"
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enddate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="Organization"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="Solok Recovery"
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/organization" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="Location"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mobile.hcms.widgets.textview.TextViewLatoRegular
+            android:textSize="13sp"
+            android:text="Solok"
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:background="@color/newline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
